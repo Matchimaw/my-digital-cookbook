@@ -1,0 +1,24 @@
+@import 'color';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $text-color;
+  background-color: $background;
+}
+
+nav a {
+  color: $ac-lightblue;
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: $ac-blue !important;
+  }
+}
+
+.top-bar, .top-bar ul {
+  margin-bottom: 2em;
+}
+
+.cookbook-icon {
+  max-width: 2.5em;
+}
