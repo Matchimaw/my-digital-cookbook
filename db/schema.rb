@@ -17,10 +17,11 @@ ActiveRecord::Schema.define(version: 2021_05_03_172622) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "name", null: false
-    t.string "prepTime", null: false
-    t.text "ingredients", null: false
-    t.text "instructions", null: false
     t.string "photo_path"
+    t.string "prepTime", null: false
+    t.string "totalTime", null: false
+    t.text "ingredient", null: false
+    t.text "instruction", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
