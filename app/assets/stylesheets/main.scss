@@ -7,11 +7,11 @@ body {
 }
 
 nav a {
-  color: $ac-lightblue;
+  color: #9c5626f3;
   transition: color 0.1s ease-in;
 
   &:hover {
-    color: $ac-blue !important;
+    color: rgba(197, 134, 51, 0.897) !important;
   }
 }
 

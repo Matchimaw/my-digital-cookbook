@@ -7,7 +7,6 @@ class RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.new(recipes_params)
-
     if @recipe.save
       flash[:success] = "Recipe added successfully"
       redirect_to "/recipes/#{@recipe.id}"
@@ -19,7 +18,8 @@ class RecipesController < ApplicationController
 
   private
 
-  def recipes_params
-    params.require(:recipe).permit(:name, :photo_path, :prepTime, :ingredients, :instructions)
+
+  def recipe_params
+    params.require(:recipe).permit(:name, :photo_path, :prepTime, :totalTime, :ingredient, :instruction)
   end
 end
