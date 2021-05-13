@@ -1,0 +1,29 @@
+<div class="grid-container">
+  <%= form_for @recipe do |f| %>
+
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :photo_path "Photo" %>
+      <%= f.file_field :photo_path %>
+    </div>
+
+    <div class="field">
+      <%= f.label :prepTime, "Prep Time" %>
+      <%= f.text_area :prepTime %>
+    </div>
+
+    <div class="field">
+      <%= f.label :ingredients, "Ingredients" %>
+      <%= f.file_field :ingredients %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Add Recipe"%>
+    </div>
+
+  <% end %>
+</div>

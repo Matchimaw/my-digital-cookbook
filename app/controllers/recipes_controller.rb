@@ -1,14 +1,12 @@
 class RecipesController < ApplicationController
   before_action :authenticate_user!
 
-  def new 
+  def new
     @recipe = Recipe.new
   end
 
   def create
-    # binding.pry
-    @recipe = Recipe.new(recipe_params)
-    # binding.pry
+    @recipe = Recipe.new(recipes_params)
     if @recipe.save
       flash[:success] = "Recipe added successfully"
       redirect_to "/recipes/#{@recipe.id}"
@@ -19,6 +17,7 @@ class RecipesController < ApplicationController
   end
 
   private
+
 
   def recipe_params
     params.require(:recipe).permit(:name, :photo_path, :prepTime, :totalTime, :ingredient, :instruction)
