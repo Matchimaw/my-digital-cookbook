@@ -1,26 +1,42 @@
 # README
 
+<h1>Cook Book</h1>
+
 [![Codeship Status for Matchimaw/my-digital-cookbook](https://app.codeship.com/projects/2455136a-f20f-4ea0-8ea2-a9fcddf4c7f2/status?branch=master)](https://app.codeship.com/projects/443455)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Cook Book is a digital cookbook web application. With this app, users can create and share their favorite online recipes with other users. I am a culinary enthusiast that always runs into trouble when looking for my favorite recipes. I have to write them down in my notebook or have to search on the Internet for hours to find the recipes that worked best in the past. Also, when searching for recipes, it is easy to locate a desired recipe but not that easy to see a photo of what the completed product will look like. These reasons are inspiring me to come up with a solution to create a digital cookbook web application.
 
-Things you may want to cover:
+<h3>Created Using</h3>
 
-* Ruby version
+* Ruby-2.7.3
 
-* System dependencies
+* Rails-5.2.5
 
-* Configuration
+* PostgreSQL-13
 
-* Database creation
+<h3>Set Up</h3>
 
-* Database initialization
+* Clone Repo
+```
+git clone
+```
+* Install Dependencies
+```
+yarn install
+```
+```
+bundle install
+```
+* Create database
+```
+bundle exec rake db: migrate
+```
+* Start Rails server and webpack
+```
+bundle exec rails s
+```
+```
+yarn run start
+```
+You can view locally here: <http://localhost:3000>
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
