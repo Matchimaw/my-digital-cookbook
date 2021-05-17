@@ -2,7 +2,7 @@
 
 <h1>Cook Book</h1>
 
-[![Codeship Status for Matchimaw/my-digital-cookbook](https://app.codeship.com/projects/2455136a-f20f-4ea0-8ea2-a9fcddf4c7f2/status?branch=master)](https://app.codeship.com/projects/443455)
+[![Codeship Status for Matchimaw/my-digital-cookbook](https://app.codeship.com/projects/2455136a-f20f-4ea0-8ea2-a9fcddf4c7f2/status?branch=main)](https://app.codeship.com/projects/443455)
 
 * Cook Book is a digital cookbook web application. With this app, users can create and share their favorite online recipes with other users. I am a culinary enthusiast that always runs into trouble when looking for my favorite recipes. I have to write them down in my notebook or have to search on the Internet for hours to find the recipes that worked best in the past. Also, when searching for recipes, it is easy to locate a desired recipe but not that easy to see a photo of what the completed product will look like. These reasons are inspiring me to come up with a solution to create a digital cookbook web application.
 
